@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Alysum",
+    "price": "100",
+    "thumbnail": "https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__480.jpg",
+    "id": 1
+  },
+  {
+    "title": "Pensamiento",
+    "price": "200",
+    "thumbnail": "https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__480.jpg",
+    "id": 2
+  },
+  {
+    "title": "Rosa",
+    "price": "300",
+    "thumbnail": "https://cdn.pixabay.com/photo/2018/07/04/22/42/rose-3517171_960_720.jpg",
+    "id": 3
+  }
+]
