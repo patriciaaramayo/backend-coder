@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <div></div> <!-- para inyectar el resultado -->
+    <!-- incluir handlebars desde el CDN -->
+    <script>
+        const template = Handlebars.compile('<p>Nombre: {{nombre}}</p>' + 
+                                          '<p>Apellido: {{apellido}}</p>'+
+                                          '<p>Edad: {{edad}}</p>'+
+                                          '<p>Email: {{email}}</p>'+
+                                          '<p>Telefono: {{telefono}}</p>'
+        ); // compila la plantilla
+        const html = template({ nombre: 'un nombre',
+                              apellido: 'un apellido',
+                              edad: 20,
+                              email: 'un email',
+                              telefono: '11222'
+                              }); // genera el html
+        document.querySelector('div').innerHTML = html; // inyecta el resultado en la vista
+    </script>
+    <!-- <form method="POST" action="http://localhost:4000/api/productos">
+        <input type="text" name="title" placeholder="nombre">
+        <input type="number" name="precio" placeholder="precio">
+        <input type="text" name="thumbnail" placeholder="imagen">
+        <button type="submit">click me</button>
+    </form> -->
+</body>
+</html>
+
+

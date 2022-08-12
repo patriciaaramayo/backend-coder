@@ -1,0 +1,22 @@
+.midlaner {
+    background-color:rgb(234, 205, 232);
+    border:1px solid #ddd;
+    border-radius:4px;
+    padding:5px;
+}
+
+.toplaner{
+    background-color:#f4f4f4;
+    border:1px solid #ddd;
+    border-radius:4px;
+    padding:5px;
+}
+
+ul{
+    width:25%;
+    list-style-type:none;
+    margin:auto;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
