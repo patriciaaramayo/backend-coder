@@ -6,9 +6,17 @@ const port = 4000 || process.env.PORT
 app.set('view engine', 'ejs')
 app.set('views', './views')
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => { 
+    
+    let productos = [
+            {nombre:'Producto1',precio:'$100'},
+            {nombre:'Producto2',precio:'$200'},
+            {nombre:'Producto3',precio:'$300'},
+            {nombre:'Producto4',precio:'$400'}
+        ]
     res.render('pages/index', {
-        mensaje:'Hola ejs'
+        mensaje:'Hola ejs',
+        productos
     })
 
 })

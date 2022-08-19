@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Plantilla con ejs</h1>
+    <% const estilo='color:pink' %>
+    <h1 style=<%= estilo %>>Plantilla con ejs</h1>
+    <!-- <% console.log('hola desde javascript') %> -->
+   <h2><%= mensaje %></h2> 
+   
+    <% if(productos.length > 0) { %>
+        <ul>
+            <% productos.forEach( prod => { %>
+                <li>Nombre: <%= prod.nombre %> - <%= prod.precio %> </li>
+            <%  }) %>
+        </ul>
+   <% } else { %>
+        <h2>No hay productos</h2>
+    <% }  %>
+   <%- include('../partials/footer.ejs') %>
 </body>
 </html>
