@@ -5,7 +5,7 @@ const render = (productos) => {
     let html = productos.map(prod => {
         return `<li>
             <strong>Nombre: ${prod.nombre}</strong>
-            <em>Precio: ${prod.precio}</em>
+            <em>Precio:$${prod.precio}</em>
             <img src="${prod.foto}">
         </li>`
     })

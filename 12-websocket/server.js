@@ -21,11 +21,10 @@ let productos = [
 ]
 
 const mensajes = [
-	{ mail: 'Juan', mensaje: 'Hola' },
-	{ mail: 'Pedro', mensaje: 'Chau' },
-	{ mail: 'Ana', mensaje: 'Buenas tardes' }
+	{ mail: 'jose@mail.com', mensaje: 'Hola' , hora:'19/8/2022, 11:11:43'},
+	{ mail: 'pedro@mail.com', mensaje: 'Chau' , hora:'19/8/2022, 09:11:43'},
+	{ mail: 'ana@mail.com', mensaje: 'Buenas tardes' , hora:'19/8/2022, 08:11:43'},
 ]
-
 
 io.on('connection', (socket) => {
     const mensaje = {

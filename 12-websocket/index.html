@@ -16,7 +16,7 @@
             <form onsubmit="return addProduct(this)" class="mt-5">
                 <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre">
                 <br>
-                <input class="form-control" type="text" id="precio" name="precio" placeholder="Precio">
+                <input class="form-control" type="number" id="precio" name="precio" placeholder="Precio">
                 <br>
                 <input class="form-control" type="text" id="foto" name="foto" placeholder="Foto URL">
                 <br>
@@ -33,10 +33,13 @@
     <div class="row">
         <div id="mensajes"></div>
         <form onsubmit="return addMessage(this)">
-            <input type="text" id="mail" name="mail" placeholder="mail">
+            <input type="email" id="mail" name="mail" placeholder="mail">
             <input type="text" id="mensaje" name="mensaje" placeholder="mensaje...">
             <input type="submit" value="Enviar">
+            <br>
+            <br>
         </form>
+     
     </div>
 
     <script src="index.js"></script>

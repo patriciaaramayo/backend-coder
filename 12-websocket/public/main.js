@@ -7,8 +7,10 @@ const renderer = data => {
 	const html = data.map((elem, index) => {
 		return (
 			`<div>
-				<strong>${elem.mail}</strong>:
-				<em>${elem.mensaje}</em>
+				<strong>${elem.mail }</strong>
+				<strong>${ elem.hora}</strong>:
+				<em>${ elem.mensaje}</em>
+				
 			</div>`)
 	}).join(' ');
 	document.querySelector('#mensajes').innerHTML = html;
@@ -17,8 +19,8 @@ const renderer = data => {
 const addMessage= (evt) => {
     const mail = document.querySelector('#mail').value
     const mensaje = document.querySelector('#mensaje').value
-
-    const chat = {mail, mensaje}
+	const hora = new Date(Date.now()).toLocaleString()
+    const chat = {mail, mensaje, hora}
     server.emit('mensaje-nuevo', chat, ()=>{
         console.log(chat)
     })
